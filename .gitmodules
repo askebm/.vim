@@ -1,3 +1,6 @@
 [submodule "plugin/vim-latex-live-preview"]
 	path = plugin/vim-latex-live-preview
 	url = https://github.com/xuhdev/vim-latex-live-preview.git
+[submodule "plugin/clang_complete"]
+	path = plugin/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete.git
