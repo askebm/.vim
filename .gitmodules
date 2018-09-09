@@ -4,3 +4,9 @@
 [submodule "plugin/clang_complete"]
 	path = plugin/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "pack/git-plugins/start/vimtex"]
+	path = pack/git-plugins/start/vimtex
+	url = https://github.com/lervag/vimtex.git
+[submodule "pack/git-plugins/start/ale"]
+	path = pack/git-plugins/start/ale
+	url = https://github.com/w0rp/ale.git
