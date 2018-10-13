@@ -9,5 +9,5 @@ else
 	A=$(basename --suffix=.png -a ${WORK_PATH}/${WORK_DIR}/*".png" | sort -n | tail -n1)
 	A=$(expr ${A} + 1)
 fi
-import "${WORK_PATH}/${WORK_DIR}/${A}.png"
 echo "${WORK_DIR}/${A}.png"
+import "${WORK_PATH}/${WORK_DIR}/${A}.png"
