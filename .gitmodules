@@ -16,3 +16,6 @@
 [submodule "pack/git-plugins/start/vim-snippets"]
 	path = pack/git-plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "pack/git-plugins/start/todo.txt"]
+	path = pack/git-plugins/start/todo.txt
+	url = https://github.com/freitass/todo.txt-vim.git
