@@ -1,0 +1,10 @@
+snippet svg "Svg environment" b
+\begin{figure}[${1:htpb}]
+        \centering
+	\def\svgwidth{${2:0.8}\textwidth}
+        \includesvg[${3:./}]{${4:name}}
+        \caption{$4}
+        \label{fig:$4}
+\end{figure}
+
+endsnippet
