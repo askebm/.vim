@@ -1,3 +1,4 @@
+set updatetime=500
 nnoremap <F12> :call FigScreenGrab()<CR>
 function! ScreenGrab()
 	let arg = expand('%:p:h')
@@ -5,9 +6,9 @@ function! ScreenGrab()
 	call setline(line('.'), getline('.') .  res)
 endfunction
 function! FigScreenGrab()
-	:normal! o\begin{figure}[h]
+	:normal! o\begin{figure}[H]
 	:normal! o\centering
-	:normal! o\includegraphics[width=0.8\textwidth]{
+	:normal! o\includegraphics[width=\textwidth]{
 	call ScreenGrab()
 	call setline(line('.'), getline('.') . '}')
 	:normal! o\caption{Caption:}
