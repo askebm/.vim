@@ -28,3 +28,6 @@
 [submodule "pack/git-plugins/start/vim-hdl"]
 	path = pack/git-plugins/start/vim-hdl
 	url = https://github.com/suoto/vim-hdl.git
+[submodule "pack/git-plugins/start/vim-cmake-syntax"]
+	path = pack/git-plugins/start/vim-cmake-syntax
+	url = https://github.com/pboettch/vim-cmake-syntax.git
