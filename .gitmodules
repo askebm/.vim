@@ -28,3 +28,6 @@
 [submodule "pack/git-plugins/start/vim-hdl"]
 	path = pack/git-plugins/start/vim-hdl
 	url = https://github.com/suoto/vim-hdl.git
+[submodule "pack/git-plugins/start/syntastic"]
+	path = pack/git-plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
