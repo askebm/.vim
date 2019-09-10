@@ -1,8 +1,16 @@
 priority 1000
-
 # Member get
-snippet mg "mget" i
-	${2:int} get_${1:foo}() const;
+snippet mg
+	${2:int} get_${1:foo}() const {return $1 };
+	$0
 endsnippet
 
+snippet ms
+	${2:void} set_${1:foo}(${3:int}& $1);
+	$0
+endsnippet
 
+snippet msd
+	void set_${1:foo}(${2:int}& ${1/(.).*/$1/g}) { $1 = ${1/(.).*/$1/g}  };
+	$0
+endsnippet
