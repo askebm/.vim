@@ -1,9 +1,3 @@
-[submodule "plugin/vim-latex-live-preview"]
-	path = plugin/vim-latex-live-preview
-	url = https://github.com/xuhdev/vim-latex-live-preview.git
-[submodule "plugin/clang_complete"]
-	path = plugin/clang_complete
-	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "pack/git-plugins/start/vimtex"]
 	path = pack/git-plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
@@ -31,3 +25,9 @@
 [submodule "pack/git-plugins/start/vim-cmake-syntax"]
 	path = pack/git-plugins/start/vim-cmake-syntax
 	url = https://github.com/pboettch/vim-cmake-syntax.git
+[submodule "pack/git-plugins/start/clang_complete"]
+	path = pack/git-plugins/start/clang_complete
+	url = git@github.com:xavierd/clang_complete.git
+[submodule "pack/git-plugins/start/vim-latex-live-preview"]
+	path = pack/git-plugins/start/vim-latex-live-preview
+	url = git@github.com:xuhdev/vim-latex-live-preview.git
