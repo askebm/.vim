@@ -18,9 +18,6 @@ colorscheme 256-jungle
 
 let g:livepreview_previewer = '$HOME/.vim/scripts/mupdf.inotify'
 
-"Ale
-let g:ale_completion_enabled = 1
-let g:ale_linters_explicit = 1
 
 " Set UltiSnip Directory
 let g:UltiSnipsSnippetDirectories = ["UltiSnips","myUltiSnips"]
@@ -43,8 +40,11 @@ let g:vimtex_compiler_latexmk = {'callback' : 0}
 set conceallevel=1
 let g:tex_conceal='abdmg'
 
-" Clang_complete "
-let g:clang_library_path='/usr/lib'
+" Clangd_complete "
+let g:ycm_use_clangd = 1
+let g:ycm_clangd_binary_path = '/usr/bin/clangd'
+"let g:ycm_clangd_binary_path = '/home/aske/.vim/pack/git-plugins/start/YouCompleteMe/third_party/ycmd/third_party/clangd/output/bin/clangd'
+let g:ycm_clangd_uses_ycmd_caching = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger='<tab>'
