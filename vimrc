@@ -17,6 +17,8 @@ set tabstop=2 shiftwidth=2 smarttab
 colorscheme 256-jungle
 
 let g:livepreview_previewer = '$HOME/.vim/scripts/mupdf.inotify'
+
+"Ale
 let g:ale_completion_enabled = 1
 let g:ale_linters_explicit = 1
 

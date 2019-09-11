@@ -1,9 +1,6 @@
 [submodule "pack/git-plugins/start/vimtex"]
 	path = pack/git-plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
-[submodule "pack/git-plugins/start/ale"]
-	path = pack/git-plugins/start/ale
-	url = https://github.com/w0rp/ale.git
 [submodule "pack/git-plugins/start/ultisnips"]
 	path = pack/git-plugins/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
@@ -19,15 +16,9 @@
 [submodule "pack/git-plugins/start/vim-openscad"]
 	path = pack/git-plugins/start/vim-openscad
 	url = https://github.com/sirtaj/vim-openscad.git
-[submodule "pack/git-plugins/start/syntastic"]
-	path = pack/git-plugins/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "pack/git-plugins/start/vim-cmake-syntax"]
 	path = pack/git-plugins/start/vim-cmake-syntax
 	url = https://github.com/pboettch/vim-cmake-syntax.git
-[submodule "pack/git-plugins/start/clang_complete"]
-	path = pack/git-plugins/start/clang_complete
-	url = git@github.com:xavierd/clang_complete.git
 [submodule "pack/git-plugins/start/vim-latex-live-preview"]
 	path = pack/git-plugins/start/vim-latex-live-preview
 	url = git@github.com:xuhdev/vim-latex-live-preview.git
