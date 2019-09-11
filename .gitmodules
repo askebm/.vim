@@ -25,3 +25,6 @@
 [submodule "pack/git-plugins/start/vim-colorschemes"]
 	path = pack/git-plugins/start/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "pack/git-plugins/start/YouCompleteMe"]
+	path = pack/git-plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
