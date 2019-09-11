@@ -31,3 +31,6 @@
 [submodule "pack/git-plugins/start/vim-latex-live-preview"]
 	path = pack/git-plugins/start/vim-latex-live-preview
 	url = git@github.com:xuhdev/vim-latex-live-preview.git
+[submodule "pack/git-plugins/start/vim-colorschemes"]
+	path = pack/git-plugins/start/vim-colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
