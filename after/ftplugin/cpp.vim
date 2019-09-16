@@ -7,12 +7,5 @@ nnoremap <Leader>rb :!clear && ./build/$(cat CMakeLists.txt \| grep add_executab
 
 " Auto fold based on cpp syntax
 set foldmethod=syntax
-" CMake Parser
-" Call stack entries
-let &efm = ' %#%f:%l %#(%m)'
-" Start of multi-line error
-let &efm .= ',%E' . 'CMake Error at %f:%l (message):'
-" End of multi-line error
-let &efm .= ',%Z' . 'Call Stack (most recent call first):'
-" Continuation is message
-let &efm .= ',%C' . ' %m'
+
+compiler/gcc
