@@ -36,3 +36,4 @@ function! RenameFile()
 		call system( "mv " . oldpath . " " . newpath)
 	endif
 endfunction
+nnoremap <Leader>op :!zathura %:r.pdf&<CR><CR>
