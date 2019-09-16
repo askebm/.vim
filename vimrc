@@ -66,9 +66,13 @@ let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 
 " Edit ft specific sourced file
-nnoremap <Leader>fe :sp ~/.vim/after/ftplugin/%:e.vim<CR>
+nnoremap <Leader>fe :execute ":sp ~/.vim/after/ftplugin/" . &ft . ".vim"<CR>
 " Edit Ultisnips
 nnoremap <Leader>ue :UltiSnipsEdit<CR>
+
+" Yank visual to clipboard
+vnoremap <Leader>y :w !xclip -selection clipboard<CR><CR>
+
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
