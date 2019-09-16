@@ -16,13 +16,26 @@ set tabstop=2 shiftwidth=2 smarttab
 " Colorscheme
 colorscheme 256-jungle
 
-let g:livepreview_previewer = '$HOME/.vim/scripts/mupdf.inotify'
+"let g:livepreview_previewer = '$HOME/.vim/scripts/mupdf.inotify'
+let g:livepreview_previewer = 'zathura'
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_quickfix_mode = 0
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-pdf',
+    \   '-shell-escape',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=0',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
 
 
 " Set UltiSnip Directory
 let g:UltiSnipsSnippetDirectories = ["UltiSnips","myUltiSnips"]
 let g:UltiSnipsSnippetsDir = "~/.vim/myUltiSnips"
-let g:UltiSnipsEditSplit = "vertical"
+let g:UltiSnipsEditSplit = "horizontal"
 
 " Define where slime sends output
 let g:slime_target = "vimterminal"
@@ -47,10 +60,15 @@ let g:ycm_clangd_binary_path = '/usr/bin/clangd'
 let g:ycm_clangd_uses_ycmd_caching = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsExpandTrigger='<Leader><Leader>'
 let g:UltiSnipsListSnippets='<c-tab>'
 let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+
+" Edit ft specific sourced file
+nnoremap <Leader>fe :sp ~/.vim/after/ftplugin/%:e.vim<CR>
+" Edit Ultisnips
+nnoremap <Leader>ue :UltiSnipsEdit<CR>
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
