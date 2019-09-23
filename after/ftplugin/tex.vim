@@ -36,4 +36,8 @@ function! RenameFile()
 		call system( "mv " . oldpath . " " . newpath)
 	endif
 endfunction
+"Open curretn pdf in zathura
 nnoremap <Leader>op :!zathura %:r.pdf&<CR><CR>
+
+"Make newline and newline character
+inoremap <Space><CR> \\<CR>
