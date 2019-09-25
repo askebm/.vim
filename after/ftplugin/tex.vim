@@ -6,7 +6,7 @@ function! ScreenGrab()
 	call setline(line('.'), getline('.') .  res)
 endfunction
 function! FigScreenGrab()
-	:normal! o\begin{figure}[H]
+	:normal! o\begin{figure}[h]
 	:normal! o\centering
 	:normal! o\includegraphics[width=\textwidth]{
 	call ScreenGrab()
