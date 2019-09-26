@@ -137,3 +137,16 @@ context "math()"
 snippet "(\\?\w+)(,\.|\.,)" "Vector postfix" riA
 \vec{`!p snip.rv=match.group(1)`}
 endsnippet
+
+priority 1000
+context "math()"
+snippet int "integral" wA
+\int_{$1}^{$2}$0
+endsnippet
+
+context "math()"
+snippet sqr  "sqrt" wA
+\sqrt{$1}$0
+endsnippet
+
+
