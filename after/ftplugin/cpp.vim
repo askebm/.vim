@@ -9,3 +9,6 @@ nnoremap <Leader>rb :!clear && ./build/$(cat CMakeLists.txt \| grep add_executab
 set foldmethod=syntax
 
 compiler/gcc
+
+" Restart YouCompleteMe Server
+nnoremap <Leader>ycr :YcmRestartServer<CR>
