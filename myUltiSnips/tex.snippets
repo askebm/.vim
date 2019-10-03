@@ -140,7 +140,7 @@ endsnippet
 
 priority 1000
 context "math()"
-snippet int "integral" wA
+snippet iint "integral" wA
 \int_{$1}^{$2}$0
 endsnippet
 
@@ -149,4 +149,37 @@ snippet sqr  "sqrt" wA
 \sqrt{$1}$0
 endsnippet
 
+snippet sympy "sympy block " w
+sympy $1 sympy$0
+endsnippet
 
+priority 10000
+snippet 'sympy(.*)sympy' "evaluate sympy" wr
+`!p
+from sympy import *
+x, y, z, t = symbols('x y z t')
+k, m, n = symbols('k m n', integer=True)
+f, g, h = symbols('f g h', cls=Function)
+init_printing()
+snip.rv = eval('latex(' + match.group(1).replace('\\', '') \
+    .replace('^', '**') \
+    .replace('{', '(') \
+    .replace('}', ')') + ')')
+`
+endsnippet
+
+priority 1000
+context "math()"
+snippet sb "Subscript" iA
+_{$1}$0
+endsnippet
+
+context "math()"
+snippet RR "Real numbers" wA
+{\rm I\!R}
+endsnippet
+
+context "math()"
+snippet inff "infinity" wA
+\infty
+endsnippet
