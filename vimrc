@@ -73,6 +73,8 @@ nnoremap <Leader>ue :UltiSnipsEdit<CR>
 " Yank visual to clipboard
 vnoremap <Leader>y :w !xclip -selection clipboard<CR><CR>
 
+" Airline config
+let g:airline_powerline_fonts = 1
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
