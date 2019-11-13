@@ -69,6 +69,8 @@ let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 nnoremap <Leader>fe :execute ":sp ~/.vim/after/ftplugin/" . &ft . ".vim"<CR>
 " Edit Ultisnips
 nnoremap <Leader>ue :UltiSnipsEdit<CR>
+" Edit vimrc
+nnoremap <Leader>ve :sp ~/.vim/vimrc<CR>
 
 " Yank visual to clipboard
 vnoremap <Leader>y :w !xclip -selection clipboard<CR><CR>
