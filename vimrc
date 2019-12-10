@@ -37,6 +37,12 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips","myUltiSnips"]
 let g:UltiSnipsSnippetsDir = "~/.vim/myUltiSnips"
 let g:UltiSnipsEditSplit = "horizontal"
 
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger='<Leader><Leader>'
+let g:UltiSnipsListSnippets='<c-tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-j>'
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+
 " Define where slime sends output
 let g:slime_target = "vimterminal"
 let g:slime_no_mappings=1
@@ -59,11 +65,6 @@ let g:ycm_clangd_binary_path = '/usr/bin/clangd'
 "let g:ycm_clangd_binary_path = '/home/aske/.vim/pack/git-plugins/start/YouCompleteMe/third_party/ycmd/third_party/clangd/output/bin/clangd'
 let g:ycm_clangd_uses_ycmd_caching = 1
 
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger='<Leader><Leader>'
-let g:UltiSnipsListSnippets='<c-tab>'
-let g:UltiSnipsJumpForwardTrigger='<c-j>'
-let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 
 " Edit ft specific sourced file
 nnoremap <Leader>fe :execute ":sp ~/.vim/after/ftplugin/" . &ft . ".vim"<CR>
@@ -73,10 +74,13 @@ nnoremap <Leader>ue :UltiSnipsEdit<CR>
 nnoremap <Leader>ve :sp ~/.vim/vimrc<CR>
 
 " Yank visual to clipboard
-vnoremap <Leader>y :w !xclip -selection clipboard<CR><CR>
+xnoremap <Leader>y :w !xclip -selection clipboard<CR><CR>
 
 " Airline config
 let g:airline_powerline_fonts = 1
+
+" Mathematica synta higlighting
+let g:mma_candy = 1
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
