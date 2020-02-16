@@ -18,34 +18,17 @@ def math():
 endglobal
 
 snippet template "Basic template" b
+% !TEX program = lualatex
 \documentclass[a4paper]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage[${1:english}]{babel}
-\usepackage{amsmath, amssymb}
 \usepackage[headheight=14pt, top=0.5cm, bottom=0.5cm, left=.5cm, right=.5cm]{geometry}
 
-% figure support
-\usepackage{import}
-\usepackage{xifthen}
-\pdfminorversion=7
-\usepackage{pdfpages}
-\usepackage{transparent}
-\newcommand{\executeiffilenewer}[3]{%
-\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
-{\pdffilemoddate{#2}}>0%
-{\immediate\write18{#3}}\fi%
-}
-\newcommand{\includesvg}[2][./]{%
-\executeiffilenewer{#1#2.svg}{#1#2.pdf}
-{inkscape -z -D --file=#1#2.svg --export-pdf=#1#2.pdf --export-latex}
-\import{#1}{#2.pdf_tex}
-}
+\usepackage{fontspec}
 
-\newcommand*{\bigchi}{\mbox{\Large$\chi$}}
-\pdfsuppresswarningpagegroup=1
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{amsmath, amssymb}
+
 
 \begin{document}
 	$0

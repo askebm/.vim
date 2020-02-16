@@ -20,11 +20,15 @@ colorscheme 256-jungle
 let g:livepreview_previewer = 'zathura'
 let g:vimtex_view_method = 'zathura'
 let g:vimtex_quickfix_mode = 0
+"let g:vimtex_compiler_latexmk_engines = {
+"			\ '_' : '-pdflua'
+"			\}
+let g:vimtex_copmpiler_method = 'latexmk'
 let g:vimtex_compiler_latexmk = {
+		\ 'build_dir' : 'out',
+		\ 'executable' : 'latexmk',
+		\ 'callback' : 0,
     \ 'options' : [
-    \   '-pdf',
-    \   '-shell-escape',
-    \   '-verbose',
     \   '-file-line-error',
     \   '-synctex=0',
     \   '-interaction=nonstopmode',
@@ -52,8 +56,6 @@ let mapleader= ","
 set showcmd
 " Set default latex type
 let g:tex_flavor = "latex"
-" Disable warnings about missing clientserver, since none is available
-let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 " Conceal sections
 set conceallevel=1

@@ -37,7 +37,7 @@ function! RenameFile()
 	endif
 endfunction
 "Open curretn pdf in zathura
-nnoremap <Leader>op :!zathura %:r.pdf&<CR><CR>
+nnoremap <Leader>op :!zathura out/%:r.pdf&<CR><CR>
 
 "Make newline and newline character
 inoremap <Space><CR> \\<CR>
