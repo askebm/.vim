@@ -1,18 +1,18 @@
 priority 1000
 snippet init
-	cmake_minimum_required(VERSION ${1:2.8.2})
-	project(${2:ProjectName})
+cmake_minimum_required(VERSION ${1:2.8.2})
+project(${2:ProjectName})
 
-	set(CMAKE_CXX_STANDARD 11)
-	set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-	find_package(${3:library})
+find_package(${3:library})
 
-	include_directories(${$3_INCLUDE_DIRS})
+include_directories(${$3_INCLUDE_DIRS})
 
-	add_subdirectory(${0:src})
+add_subdirectory(${0:src})
 
-	add_executable($2)
+add_executable($2)
 
-	target_link_libraries($2 ${$3_LIBRARIES})
+target_link_libraries($2 ${$3_LIBRARIES})
 endsnippet
