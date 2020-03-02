@@ -39,16 +39,27 @@ endsnippet
 
 snippet svg "Svg environment" b
 \begin{figure}[${1:htpb}]
-        \centering
+	\centering
 	\def\svgwidth{${2:0.8}\textwidth}
-        \includesvg[${3:./}]{${4:name}}
-        \caption{$4}
-        \label{fig:$4}
+	\includesvg[${3:./}]{${4:name}}
+	\caption{$4}
+	\label{fig:$4}
 \end{figure}
 
 endsnippet
 
+snippet subf "Start a subfile" b
+% !TEX program = lualatex
+\documentclass[${1:path}]{subfiles}
+\begin{document}
+$0
+	
+\end{document}
+endsnippet
 
+snippet todo "Todo for todonotes" b
+\todo{$1} $0
+endsnippet
 
 
 snippet mk "Math" wA
