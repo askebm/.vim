@@ -37,3 +37,6 @@
 [submodule "pack/git-plugins/start/vim-mathematica"]
 	path = pack/git-plugins/start/vim-mathematica
 	url = https://github.com/rsmenon/vim-mathematica.git
+[submodule "pack/git-plugins/start/jupyter-vim"]
+	path = pack/git-plugins/start/jupyter-vim
+	url = https://github.com/wmvanvliet/jupyter-vim.git
