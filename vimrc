@@ -78,6 +78,9 @@ nnoremap <Leader>ve :sp ~/.vim/vimrc<CR>
 " Yank visual to clipboard
 xnoremap <Leader>y :w !xclip -selection clipboard<CR><CR>
 
+" View buffers and choose
+nnoremap <leader>bb :ls<CR>:b<Space>
+
 " Airline config
 let g:airline_powerline_fonts = 1
 
