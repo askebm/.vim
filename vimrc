@@ -25,10 +25,10 @@ let g:vimtex_quickfix_mode = 0
 "			\}
 let g:vimtex_copmpiler_method = 'latexmk'
 let g:vimtex_compiler_latexmk = {
-		\ 'build_dir' : 'out',
 		\ 'executable' : 'latexmk',
 		\ 'callback' : 0,
     \ 'options' : [
+    \   '-pdflualatex="lualatex -shell-escape %O %S"',
     \   '-file-line-error',
     \   '-synctex=0',
     \   '-interaction=nonstopmode',
