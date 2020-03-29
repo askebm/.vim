@@ -11,7 +11,13 @@ nnoremap <buffer> <silent> <c-c> :JupyterSendCell<CR>
 "nmap     <buffer> <silent> <leader>e <Plug>JupyterRunTextObj
 xnoremap <buffer> <silent> <c-c> :JupyterSendRange<CR>
 
-"nnoremap <buffer> <silent> <leader>U :JupyterUpdateShell<CR>
+
+"nnoremap <buffer> <silent> <leader>up :JupyterUpdateShell<CR>
+
+" Jupyter _Start _Up
+nnoremap <buffer> <silent> <leader>su :!jupyter-qtconsole > /dev/null 2>&1 &<CR><CR>:JupyterConnect<CR><CR>
+
+
 
 " Debugging maps
 "nnoremap <buffer> <silent> <leader>b :PythonSetBreak<CR>
