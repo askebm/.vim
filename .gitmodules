@@ -40,3 +40,6 @@
 [submodule "pack/git-plugins/start/jupyter-vim"]
 	path = pack/git-plugins/start/jupyter-vim
 	url = https://github.com/wmvanvliet/jupyter-vim.git
+[submodule "pack/git-plugins/start/vim-indent-guides"]
+	path = pack/git-plugins/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
