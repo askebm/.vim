@@ -16,6 +16,7 @@ set tabstop=2 shiftwidth=2 smarttab
 " Colorscheme
 let t_Co=256
 colorscheme 256-jungle
+autocmd VimEnter,Colorscheme * :hi LineNr ctermbg=234
 
 "let g:livepreview_previewer = '$HOME/.vim/scripts/mupdf.inotify'
 let g:livepreview_previewer = 'zathura'
@@ -95,6 +96,9 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_auto_colors = 0
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
+
+" Git stuff
+nnoremap <leader>ga :!git add % && git commit -m ""<Left>
 
 
 " Load all plugins now.
