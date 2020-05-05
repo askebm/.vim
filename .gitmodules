@@ -22,9 +22,6 @@
 [submodule "pack/git-plugins/start/vim-latex-live-preview"]
 	path = pack/git-plugins/start/vim-latex-live-preview
 	url = git@github.com:xuhdev/vim-latex-live-preview.git
-[submodule "pack/git-plugins/start/vim-colorschemes"]
-	path = pack/git-plugins/start/vim-colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
 [submodule "pack/git-plugins/start/YouCompleteMe"]
 	path = pack/git-plugins/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
@@ -43,3 +40,6 @@
 [submodule "pack/git-plugins/start/vim-indent-guides"]
 	path = pack/git-plugins/start/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "pack/git-plugins/start/gruvbox"]
+	path = pack/git-plugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

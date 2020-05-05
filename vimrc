@@ -15,8 +15,19 @@ set tabstop=2 shiftwidth=2 smarttab
 
 " Colorscheme
 let t_Co=256
-colorscheme 256-jungle
-autocmd VimEnter,Colorscheme * :hi LineNr ctermbg=234
+let g:gruvbox_italic = '1'
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_sign_column = 'bg0'
+set background=dark
+colorscheme gruvbox
+
+" Enable Indent Guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+"let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=bg
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 
 "let g:livepreview_previewer = '$HOME/.vim/scripts/mupdf.inotify'
 let g:livepreview_previewer = 'zathura'
@@ -89,13 +100,6 @@ let g:airline_powerline_fonts = 1
 " Mathematica synta higlighting
 let g:mma_candy = 1
 
-" Enable INdent Guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-"let g:indent_guides_guide_size = 1
-let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 
 " Git stuff
 nnoremap <leader>ga :!git add % && git commit -m ""<Left>
