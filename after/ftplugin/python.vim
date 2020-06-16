@@ -1,5 +1,6 @@
 " Run current file
-nnoremap <buffer> <silent> <leader>rf :JupyterRunFile<CR>
+"nnoremap <buffer> <silent> <leader>rf :JupyterRunFile<CR>
+nnoremap <buffer> <silent> <leader>rf :0,$JupyterSendRange<CR>
 "nnoremap <buffer> <silent> <leader>I :PythonImportThisFile<CR>
 
 " Change to directory of current file
