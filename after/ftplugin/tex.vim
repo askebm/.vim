@@ -41,3 +41,7 @@ nnoremap <Leader>op :!zathura out/%:r.pdf&<CR><CR>
 
 "Make newline and newline character
 inoremap <Space><CR> \\<CR>
+
+"Enable Spelling by default
+set spell
+
