@@ -104,6 +104,9 @@ let g:mma_candy = 1
 " Git stuff
 nnoremap <leader>ga :!git add % && git commit -m ""<Left>
 
+"Costume keybind
+inoremap <Left> {
+inoremap <Right> }
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
