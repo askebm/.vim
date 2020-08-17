@@ -43,3 +43,6 @@
 [submodule "pack/git-plugins/start/gruvbox"]
 	path = pack/git-plugins/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/git-plugins/start/vim-bitbake"]
+	path = pack/git-plugins/start/vim-bitbake
+	url = https://github.com/kergoth/vim-bitbake.git
