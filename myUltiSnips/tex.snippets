@@ -226,3 +226,78 @@ snippet minti "minted inline" i
 \mintinline{${1:bash}}{$2} $0
 endsnippet
 
+snippet scr "screenshot figure"
+`!p
+if snip.c == "":
+	import os
+	import re
+	path = vim.eval('expand("%:p:h")')
+	os.chdir(path)
+	if not os.path.exists("images"):
+		os.mkdir("images")
+	files = os.listdir("images")
+	if(len(files) == 0):
+		num = 1
+	else:
+		files = " ".join(files)
+		files = re.findall('\d+\.png',files)
+		files = " ".join(files)
+		files = re.findall('\d+',files)
+		nums = [ int(i) for i in files ]
+		nums.sort()
+		num = nums[-1]
+		num += 1
+	filepath = "images/"+str(num)+".png"
+
+	os.system("import "+path+"/"+filepath)
+	snip += r"\begin{figure}[H]"
+	snip >> 1
+	snip += r"\centering"
+	snip += r"\includegraphics[width=0.8\textwidth]{" + filepath + "}"
+	snip << 1
+	snip += r"\end{figure}"
+
+`
+endsnippet
+
+context "math()"
+snippet us "underset"
+\underset{$1}{${2:${VISUAL}}}$0
+endsnippet
+
+context "math()"
+snippet os "overset"
+\overset{$1}{${2:${VISUAL}}}$0
+endsnippet
+
+context "math()"
+snippet mu "mu" iA
+\mu$0
+endsnippet
+
+
+context "math()"
+snippet alpha "alpha" iA
+\alpha$0
+endsnippet
+
+
+context "math()"
+snippet Sigma "Sigma" iA
+\Sigma$0
+endsnippet
+
+context "math()"
+snippet sigma "sigma" iA
+\sigma$0
+endsnippet
+
+context "math()"
+snippet ... "cdots" iA
+\cdots$0
+endsnippet
+
+context "math()"
+snippet delta "delta" iA
+\delta$0
+endsnippet
