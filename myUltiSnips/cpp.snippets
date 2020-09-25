@@ -51,3 +51,11 @@ endsnippet
 snippet Inc
 	#include "${1:`vim_snippets#Filename("$1.hpp")`}"
 endsnippet
+
+snippet os "ostream operator" b
+std::ostream& operator << (std::ostream& os,${1:int} ${2:Obj}) {
+	os << $3
+}
+$0
+endsnippet
+
