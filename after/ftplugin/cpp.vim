@@ -3,7 +3,9 @@
 set makeprg=ln\ -sf\ build/compile_commands.json\ ./\ &&\ cmake\ -Bbuild\ &&\ cmake\ --build\ build
 nnoremap <C-c> :make<CR>
 " Run compiled executable
-nnoremap <Leader>rb :!clear && ./build/$(cat CMakeLists.txt \| grep add_executable \| sed -E "s/.*\((\S+).*/\1/g")<CR>
+nnoremap <Leader>rb :!clear && ./build/$(cat CMakeLists.txt \| grep add_executable \| sed -E "s/.*\(\s*(\S+).*/\1/g")<CR>
+" GDB - Debug
+nnoremap <Leader>gdb :!clear && gdb ./build/$(cat CMakeLists.txt \| grep add_executable \| sed -E "s/.*\(\s*(\S+).*/\1/g")<CR>
 
 " Auto fold based on cpp syntax
 set foldmethod=syntax
