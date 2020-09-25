@@ -260,6 +260,43 @@ if snip.c == "":
 `
 endsnippet
 
+snippet "scr (\S.*\S)" "screenshot figure with name" wr
+`!p
+if snip.c == "":
+	import os
+	import re
+	path = vim.eval('expand("%:p:h")')
+	os.chdir(path)
+	
+	imgName = match.group(1)
+	fileName = re.sub('\s','-',imgName)
+	fileExt = '.png'
+	num = 1
+
+	if not os.path.exists("images"):
+		os.mkdir("images")
+
+	if not os.path.exists("images/" + fileName+fileExt):
+		totalName = "images/" + fileName+fileExt
+	else:
+		while os.path.exists("images/" + fileName+"-"+str(num)+fileExt):
+			num += 1
+		totalName = "images/" + fileName+"-"+str(num)+fileExt
+
+
+	os.system("import " + totalName)
+	snip += r"\begin{figure}[H]"
+	snip >> 1
+	snip += r"\centering"
+	snip += r"\includegraphics[width=0.8\textwidth]{" + totalName + "}"
+	snip += r'\caption{' + imgName + r'}'
+	snip += r'\label{fig:' + fileName + r'}'
+	snip << 1
+	snip += r"\end{figure}"
+
+`
+endsnippet
+
 context "math()"
 snippet us "underset"
 \underset{$1}{${2:${VISUAL}}}$0
