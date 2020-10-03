@@ -20,7 +20,7 @@ endsnippet
 
 snippet al "add_library"
 add_library(${1:Class} $1.cpp)
-target_include_directories($1 PUBLIC \$\{PROJECT_SOURCE_DIR\}/include/${2:\$\{CMAKE_PROJECT_NAME\}})
+target_include_directories($1 PUBLIC \$\{PROJECT_SOURCE_DIR\}/include)
 target_compile_features($1 PRIVATE cxx_std_11)
 endsnippet
 
