@@ -79,7 +79,8 @@ let g:ycm_use_clangd = 1
 let g:ycm_clangd_binary_path = '/usr/bin/clangd'
 "let g:ycm_clangd_binary_path = '/home/aske/.vim/pack/git-plugins/start/YouCompleteMe/third_party/ycmd/third_party/clangd/output/bin/clangd'
 let g:ycm_clangd_uses_ycmd_caching = 1
-
+" Disable scratchbar
+set completeopt-=preview
 
 " Edit ft specific sourced file
 nnoremap <Leader>fe :execute ":sp ~/.vim/after/ftplugin/" . &ft . ".vim"<CR>
