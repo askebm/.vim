@@ -199,7 +199,7 @@ for p in range(1,pages+1):
 	snip += r"\makebox[\textwidth][c]{"
 	snip >> 1
 	snip += r"\centering"
-	snip += r"\includegraphics[page="+str(p)+r",width=\pagewidth]{"+match.group(1)+"}"
+	snip += r"\includegraphics[page="+str(p)+r",width=\textwidth]{"+match.group(1)+"}"
 	snip << 1
 	snip += r"}"
 	snip += r"\makebox[\textwidth][c]{"
@@ -358,3 +358,14 @@ context "math()"
 snippet ] "right]" iA
  \right] $0
 endsnippet
+
+context "math()"
+snippet beta "beta" iA
+\beta$0
+endsnippet
+
+context "math()"
+snippet epsilon "epsilon" iA
+\epsilon$0
+endsnippet
+
