@@ -46,3 +46,6 @@
 [submodule "pack/git-plugins/start/vim-bitbake"]
 	path = pack/git-plugins/start/vim-bitbake
 	url = https://github.com/kergoth/vim-bitbake.git
+[submodule "pack/git-plugins/start/cmake4vim"]
+	path = pack/git-plugins/start/cmake4vim
+	url = https://github.com/ilyachur/cmake4vim
