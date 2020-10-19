@@ -1,0 +1,32 @@
+snippet arn "arrowhead none scope" b
+{
+	edge [arrowhead=none];
+	$0
+}
+endsnippet
+
+snippet are "arrowhead empty scope" b
+{
+	edge [arrowhead=empty];
+	$0
+}
+endsnippet
+
+snippet use "Usecase modelling extend" b
+{ // extends
+	edge [arrowhead=open, label="<<extend>>",style=dashed];
+	$0
+}
+endsnippet
+
+snippet usi "Usecase modelling extend" b
+{ // includes
+	edge [arrowhead=open, label="<<include>>",style=dashed];
+	$0
+}
+endsnippet
+
+snippet node "Node" b
+${1:node} [label="${2:${1/./\u$0/}}"];
+$0
+endsnippet
