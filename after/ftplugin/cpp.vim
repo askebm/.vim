@@ -19,3 +19,7 @@ nnoremap <Leader>ycr :YcmRestartServer<CR>
 let g:cmake_compile_commands = 1
 let g:cmake_compile_commands_link = "./"
 
+function RoviMode()
+	let g:ycm_clangd_binary_path='/home/aske/Git/ROVI-docker/rovi-clangd'
+	YcmRestartServer
+endfunction
