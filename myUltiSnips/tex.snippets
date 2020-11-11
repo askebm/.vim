@@ -369,3 +369,15 @@ snippet epsilon "epsilon" iA
 \epsilon$0
 endsnippet
 
+
+snippet sfloat "subfloat" b
+\subfloat[
+	${1:Caption}
+	\label{fig:${2:label}}
+]{
+	\includegraphics[width=\textwidth]{${3:file}}
+}
+endsnippet
+
+
+
