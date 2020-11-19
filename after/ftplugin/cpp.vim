@@ -15,6 +15,10 @@ compiler/gcc
 " Restart YouCompleteMe Server
 nnoremap <Leader>ycr :YcmRestartServer<CR>
 
+" YouCompleteMe FixIt
+nnoremap <Leader>yf :YcmCompleter FixIt<CR>
+
+
 " cmake4vim settings
 let g:cmake_compile_commands = 1
 let g:cmake_compile_commands_link = "./"
