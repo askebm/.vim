@@ -27,3 +27,7 @@ function RoviMode()
 	let g:ycm_clangd_binary_path='/home/aske/Git/ROVI-docker/rovi-clangd'
 	YcmRestartServer
 endfunction
+function TaiMode()
+	let g:ycm_clangd_binary_path='/home/aske/Git/TAI-Docker/tai-clangd'
+	YcmRestartServer
+endfunction
