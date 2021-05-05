@@ -43,7 +43,7 @@ let g:vimtex_compiler_latexmk = {
     \ 'options' : [
     \   '-pdflualatex="lualatex -shell-escape %O %S"',
     \   '-file-line-error',
-    \   '-synctex=0',
+    \   '-synctex=1',
     \   '-interaction=nonstopmode',
     \ ],
     \}
